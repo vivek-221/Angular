@@ -8,7 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent} from './components/contact-us/contact-us.component';
 import { NavComponent } from './components/nav/nav.component';
-
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -29,7 +29,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes,{enableTracing:true}),
+    RouterModule.forRoot(routes, { enableTracing: true }),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
